@@ -1,1 +1,41 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.materia {
+  background: white;
+  border: 2px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.materia.aprobada {
+  background: #c8f7c5;
+  border-color: #27ae60;
+  color: #2c3e50;
+}
+
+.materia.bloqueada {
+  background: #eee;
+  color: #aaa;
+  border-style: dashed;
+}
 
